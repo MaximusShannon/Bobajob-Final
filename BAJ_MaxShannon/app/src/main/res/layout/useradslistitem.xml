@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/adImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@color/BackgroundDark" />
+
+    <TextView
+        android:id="@+id/adTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adImage"
+        android:layout_alignStart="@+id/adImage"
+        android:layout_below="@+id/adImage"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/adEdit"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/edit"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/adTitle"
+        android:layout_alignLeft="@+id/adTitle"
+        android:layout_alignStart="@+id/adTitle" />
+
+    <Button
+        android:id="@+id/adDelete"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/adImage"
+        android:layout_alignRight="@+id/adImage"
+        android:layout_alignTop="@+id/adEdit"
+        android:background="@drawable/delete" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__________________________________________________"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/adEdit"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

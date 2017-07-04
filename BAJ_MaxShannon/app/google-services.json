@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1089199125691",
+    "firebase_url": "https://bobajob-c6a4d.firebaseio.com",
+    "project_id": "bobajob-c6a4d",
+    "storage_bucket": "bobajob-c6a4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089199125691:android:0768092bd3a375be",
+        "android_client_info": {
+          "package_name": "wit.bobajob.baj_maxshannon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089199125691-c8ugq9rh1jf67o82jtjqaf68v6iq3rhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wit.bobajob.baj_maxshannon",
+            "certificate_hash": "91cdfd4132f82fea058799ba01aca116ccce8e07"
+          }
+        },
+        {
+          "client_id": "1089199125691-0t3eppf34agqadas3k6qrhvv9jp8nn9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wit.bobajob.baj_maxshannon",
+            "certificate_hash": "9f62ed2c1df0f91372b25ee80e8d610fb39831b9"
+          }
+        },
+        {
+          "client_id": "1089199125691-gkudtfo3uenao8piv2pkk8hjgof5dm8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvraZfUu2VTrYsDpdYbh4Uwi2KgfhTpew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089199125691-gkudtfo3uenao8piv2pkk8hjgof5dm8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

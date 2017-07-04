@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wit.bobajob.baj_maxshannon.TradeProfileDisplay">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout11">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Trade Profile" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_trade_profile_display" />
+
+    <ImageView
+        android:id="@+id/companyIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_below="@+id/appBarLayout11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/companyIcon"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/companyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/companyIcon"
+        android:layout_alignLeft="@+id/companyName"
+        android:layout_alignStart="@+id/companyName"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/companyIcon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/companyIcon"
+        android:layout_below="@+id/companyIcon"
+        android:text="____________________________________________________________"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView40"
+        android:layout_alignStart="@+id/textView40"
+        android:layout_below="@+id/textView40"
+        android:layout_marginTop="12dp"
+        android:text="Number:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/companyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark"
+        android:layout_above="@+id/textView43"
+        android:layout_alignRight="@+id/companyName"
+        android:layout_alignEnd="@+id/companyName" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_below="@+id/textView41"
+        android:layout_marginTop="12dp"
+        android:text="Location:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/companyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/companyNumber"
+        android:layout_alignStart="@+id/companyNumber"
+        android:layout_alignTop="@+id/textView43"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView43"
+        android:layout_alignStart="@+id/textView43"
+        android:layout_below="@+id/textView43"
+        android:layout_marginTop="17dp"
+        android:text="County:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/companyCounty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView46"
+        android:layout_alignEnd="@+id/companyLocation"
+        android:layout_alignRight="@+id/companyLocation"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView46"
+        android:layout_alignStart="@+id/textView46"
+        android:layout_centerVertical="true"
+        android:text="Experience:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/companyExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView49"
+        android:layout_alignLeft="@+id/companyCounty"
+        android:layout_alignStart="@+id/companyCounty"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView49"
+        android:layout_alignStart="@+id/textView49"
+        android:layout_below="@+id/textView49"
+        android:layout_marginTop="47dp"
+        android:text="Avaiable days: "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_below="@+id/textView51"
+        android:layout_marginTop="19dp"
+        android:text="Available Nights:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView52"
+        android:layout_alignStart="@+id/textView52"
+        android:layout_below="@+id/textView52"
+        android:layout_marginTop="22dp"
+        android:text="Unskilled:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView53"
+        android:layout_alignStart="@+id/textView53"
+        android:layout_below="@+id/textView53"
+        android:layout_marginTop="18dp"
+        android:text="Skilled:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/availDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView51"
+        android:layout_alignBottom="@+id/textView51"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_toStartOf="@+id/delete"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <TextView
+        android:id="@+id/availNights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView53"
+        android:layout_alignEnd="@+id/availDays"
+        android:layout_alignRight="@+id/availDays"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <TextView
+        android:id="@+id/unskilled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView54"
+        android:layout_alignLeft="@+id/availNights"
+        android:layout_alignStart="@+id/availNights"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <TextView
+        android:id="@+id/skilled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView54"
+        android:layout_alignLeft="@+id/unskilled"
+        android:layout_alignStart="@+id/unskilled"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView54"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView54"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Edit"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editProfile"
+        android:layout_toEndOf="@+id/companyEmail"
+        android:layout_toRightOf="@+id/companyEmail"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

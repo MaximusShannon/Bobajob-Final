@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wit.bobajob.baj_maxshannon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Browse"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateAdAct"
+            android:label="@string/title_activity_create_ad"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Dashboard" />
+        <activity
+            android:name=".ThankYou_CreateAd"
+            android:label="@string/title_activity_thank_you__create_ad"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ThankYou_Register"
+            android:label="@string/title_activity_thank_you__register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterInformation"
+            android:label="@string/title_activity_register_information"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Advert"
+            android:label="@string/title_activity_advert"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyTrade"
+            android:label="@string/title_activity_my_trade"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BrowseTradesMen"
+            android:label="@string/title_activity_browse_trades_men"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TradeProfileDisplay"
+            android:label="@string/title_activity_trade_profile_display"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

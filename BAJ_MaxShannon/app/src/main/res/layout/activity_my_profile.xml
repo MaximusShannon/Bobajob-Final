@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wit.bobajob.baj_maxshannon.MyProfile">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout6">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="My Profile" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_my_profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout6"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/smiley" />
+
+    <TextView
+        android:id="@+id/userChangePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:text="Change Picture"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/userUUID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/userEmail"
+        android:layout_alignStart="@+id/userEmail"
+        android:layout_marginBottom="11dp"
+        android:text="UUID"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_alignStart="@+id/userName"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="11dp"
+        android:text="Email"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="Username"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/editUserEmail"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userName"
+        android:background="@drawable/edit"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_________________________________"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/userChangePicture"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="About Me"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29" />
+
+    <EditText
+        android:id="@+id/aboutUser"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:layout_toLeftOf="@+id/editUserEmail"
+        android:layout_toStartOf="@+id/editUserEmail"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley "
+        android:textColor="#292E37" />
+
+    <Button
+        android:id="@+id/editUserBio"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/aboutUser"
+        android:layout_toEndOf="@+id/aboutUser"
+        android:layout_toRightOf="@+id/aboutUser"
+        android:background="@drawable/edit"
+        android:textColor="@drawable/buttons" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aboutUser"
+        android:layout_alignStart="@+id/aboutUser"
+        android:layout_below="@+id/aboutUser"
+        android:paddingBottom="5dp"
+        android:text="Location"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView27"
+        android:background="@android:color/white"
+        android:paddingBottom="5dp"
+        android:text="County Wicklow"
+        android:textColor="#292E37"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_toLeftOf="@+id/userUUID"
+        android:layout_toStartOf="@+id/userUUID"
+        android:paddingBottom="5dp"
+        android:text="Available For :"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/skilledJobsCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skilled Jobs"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView29"
+        android:layout_alignRight="@+id/location"
+        android:layout_alignEnd="@+id/location" />
+
+    <CheckBox
+        android:id="@+id/unskilledCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/skilledJobsCheck"
+        android:layout_alignBottom="@+id/skilledJobsCheck"
+        android:layout_alignEnd="@+id/aboutUser"
+        android:layout_alignRight="@+id/aboutUser"
+        android:text="Unskilled Jobs"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/saveChanges"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backToBrowse"
+        android:layout_alignBottom="@+id/backToBrowse"
+        android:layout_alignLeft="@+id/unskilledCheck"
+        android:layout_alignStart="@+id/unskilledCheck"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Save Changes"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/backToBrowse"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Back to browse"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/editUserLocation"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/location"
+        android:layout_toEndOf="@+id/backToBrowse"
+        android:layout_toRightOf="@+id/backToBrowse"
+        android:background="@drawable/edit" />
+
+</RelativeLayout>

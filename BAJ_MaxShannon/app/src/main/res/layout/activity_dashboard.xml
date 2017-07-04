@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttons"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wit.bobajob.baj_maxshannon.Dashboard">
+
+    <Button
+        android:id="@+id/browseTradesmen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/white"
+        android:text="Browse Tradesmen"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/createAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/createTradeProfile"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/white"
+        android:text="Create Advert"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/browseAds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="81dp"
+        android:background="@android:color/white"
+        android:text="Browse Adverts"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/createTradeProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/browseAds"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:text="Create Trade Profile"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

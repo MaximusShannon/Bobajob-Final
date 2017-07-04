@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wit.bobajob.baj_maxshannon.Advert">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout8">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_advert" />
+
+    <ImageView
+        android:id="@+id/advertImage"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@color/common_google_signin_btn_text_dark_default"
+        android:layout_below="@+id/appBarLayout8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/advertTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/advertImage"
+        android:layout_alignStart="@+id/advertImage"
+        android:layout_below="@+id/advertImage"
+        android:layout_marginTop="11dp"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/advertImage"
+        android:layout_alignLeft="@+id/advertTitle"
+        android:layout_alignRight="@+id/advertImage"
+        android:layout_alignStart="@+id/advertTitle"
+        android:layout_below="@+id/advertTitle"
+        android:text="_______________________________________"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/advertText"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_alignEnd="@+id/textView22"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignRight="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark" />
+
+    <Button
+        android:id="@+id/adEdit"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="Edit"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/deleteAdvert"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView22"
+        android:layout_alignRight="@+id/textView22"
+        android:layout_alignTop="@+id/adEdit"
+        android:background="@drawable/buttons"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact: "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/advertText"
+        android:layout_alignLeft="@+id/advertText"
+        android:layout_alignStart="@+id/advertText" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/BackgroundDark"
+        android:layout_below="@+id/advertText"
+        android:layout_toRightOf="@+id/advertTitle"
+        android:layout_toEndOf="@+id/advertTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+</RelativeLayout>

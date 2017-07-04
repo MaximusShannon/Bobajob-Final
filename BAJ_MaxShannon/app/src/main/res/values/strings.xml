@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">BAJ_MaxShannon</string>
+    <string name="action_register">Register</string>
+    <string name="title_activity_register">Register</string>
+
+    //RegisterActivityStrings
+    <string name="register_username">Username</string>
+    <string name="register_useremail">Email</string>
+    <string name="register_password">Password</string>
+    <string name="register_repeatpassword">Repeat Password</string>
+    <string name="register_datadisclaimer">All data is protected under the Data protection Act 1988 - Data will only be used for you personally if you choose to accepted the terms and conditions above.</string>
+    <string name="register_tncs">Accept terms</string>
+    <string name="register_acceptnewsletters">Sign-up for news</string>
+    <string name="register_regbutton">Register</string>
+    <string name="title_activity_create_ad">CreateAdAct</string>
+
+
+    //CreateAdActivityStrings
+    <string name="createad_title">Create Bobajob</string>
+    <string name="createad_adTitle">Ad Title</string>
+    <string name="createad_adCatergory">Ad Category</string>
+    <string name="createad_adDesc">Ad Description</string>
+    <string name="createad_adPciture">Ad Picture</string>
+    <string name="createad_addPictureBtn">Add Picture</string>
+    <string name="createad_createAdBtn">Create Advert</string>
+    <string name="createad_phoneNumber">Phone Number</string>
+    <string name="createad_acceptEmails">Accept Emails</string>
+    <string name="createad_acceptTerms">Accept Terms</string>
+
+    //Register_thankyou
+    <string name="thankyoureg_gotoprofile">Go To Profile / Work in prog</string>
+    <string name="thankyoureg_browseads">Browse Ads</string>
+    <string name="thankyoureg_gotodash">Go To Dashboard</string>
+
+
+    //Categories for spinner
+    //Little information for now - Project will expand this
+    <string-array name="job_catergorys">
+        <item>Please Select...</item>
+        <item>Construction</item>
+        <item>Plumbing</item>
+        <item>Electrical</item>
+        <item>Garden</item>
+        <item>Home - DIY</item>
+        <item>Skilled</item>
+        <item>Unskilled</item>
+        <item>Mechanics</item>
+        <item>Lookin for</item>
+        <item>Pricing</item>
+    </string-array>
+
+    <string-array name="countys">
+        <item>Please Select...</item>
+        <item>Antrim</item>
+        <item>Armagh</item>
+        <item>Carlow</item>
+        <item>Cavan</item>
+        <item>Clare</item>
+        <item>Cork</item>
+        <item>Derry</item>
+        <item>Donegal</item>
+        <item>Down</item>
+        <item>Dublin</item>
+        <item>Galway</item>
+        <item>Kerry</item>
+        <item>Kildare</item>
+        <item>Kilkenny</item>
+        <item>Laois</item>
+        <item>Leitrim</item>
+        <item>Longford</item>
+        <item>Louth</item>
+        <item>Mayo</item>
+        <item>Meath</item>
+        <item>Monaghan</item>
+        <item>Offaly</item>
+        <item>Roscommon</item>
+        <item>Sligo</item>
+        <item>Tipperay</item>
+        <item>Sligo</item>
+        <item>Waterford</item>
+        <item>Westmeath</item>
+        <item>Wexford</item>
+        <item>Wicklow</item>
+
+    </string-array>
+
+
+    <string name="title_activity_thank_you__create_ad">ThankYou_CreateAd</string>
+    <string name="title_activity_thank_you__register">ThankYou_Register</string>
+    <string name="title_activity_register_information">RegisterInformation</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_my_profile">MyProfile</string>
+    <string name="title_activity_user_ads">UserAds</string>
+    <string name="title_activity_advert">Advert</string>
+    <string name="title_activity_my_trade">MyTrade</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_browse_trades_men">BrowseTradesMen</string>
+    <string name="title_activity_trade_profile_display">TradeProfileDisplay</string>
+
+
+</resources>

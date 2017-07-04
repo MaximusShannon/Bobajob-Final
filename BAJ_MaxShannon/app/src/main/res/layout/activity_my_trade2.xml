@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wit.bobajob.baj_maxshannon.MyTrade">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout9">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Create your trade Profile" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_my_trade"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout9"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Company/Person Name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/tradeName"
+        android:layout_width="355dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/textView31"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tradeName"
+        android:layout_alignStart="@+id/tradeName"
+        android:layout_below="@+id/tradeName"
+        android:layout_marginTop="11dp"
+        android:text="Email Address"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/tradeEmail"
+        android:layout_width="355dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/textView32"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_below="@+id/textView32"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tradeEmail"
+        android:layout_alignStart="@+id/tradeEmail"
+        android:layout_below="@+id/tradeEmail"
+        android:layout_marginTop="12dp"
+        android:text="Phone Number"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/tradeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/tradeEmail"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignRight="@+id/tradeEmail"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_below="@+id/textView34"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tradeNumber"
+        android:layout_alignStart="@+id/tradeNumber"
+        android:layout_below="@+id/tradeNumber"
+        android:layout_marginTop="13dp"
+        android:text="Location"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="355dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:layout_below="@+id/textView35"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/location"
+        android:layout_alignStart="@+id/location"
+        android:layout_centerVertical="true"
+        android:text="Experience"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/tradeExperience"
+        android:layout_width="355dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_below="@+id/textView36"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tradeExperience"
+        android:layout_alignStart="@+id/tradeExperience"
+        android:layout_below="@+id/tradeExperience"
+        android:layout_marginTop="14dp"
+        android:text="County"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:id="@+id/countySpinner"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignStart="@+id/textView37"
+        android:layout_below="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available For"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/countySpinner"
+        android:layout_alignLeft="@+id/countySpinner"
+        android:layout_alignStart="@+id/countySpinner" />
+
+    <CheckBox
+        android:id="@+id/skilledWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/unskilledWorker"
+        android:layout_alignStart="@+id/unskilledWorker"
+        android:layout_below="@+id/unskilledWorker"
+        android:text="Skilled Work"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignRight="@+id/unskilledWorker"
+        android:layout_alignEnd="@+id/unskilledWorker" />
+
+    <CheckBox
+        android:id="@+id/unskilledWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/countySpinner"
+        android:layout_alignLeft="@+id/availNights"
+        android:layout_alignRight="@+id/countySpinner"
+        android:layout_alignStart="@+id/availNights"
+        android:layout_below="@+id/availNights"
+        android:text="Unskilled Work"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <CheckBox
+        android:id="@+id/availNights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nights"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_alignRight="@+id/availDays"
+        android:layout_alignEnd="@+id/availDays" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/textView38"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38" />
+
+    <CheckBox
+        android:id="@+id/availDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38"
+        android:layout_below="@+id/textView38"
+        android:text="Days"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignRight="@+id/textView38"
+        android:layout_alignEnd="@+id/textView38" />
+
+    <ImageButton
+        android:id="@+id/companyIcon"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:paddingBottom="5dp"
+        app:srcCompat="@drawable/upload"
+        android:layout_above="@+id/unskilledWorker"
+        android:layout_alignRight="@+id/finishButton"
+        android:layout_alignEnd="@+id/finishButton" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/skilledWorker"
+        android:layout_alignEnd="@+id/tradeExperience"
+        android:layout_alignRight="@+id/tradeExperience"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Finish"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

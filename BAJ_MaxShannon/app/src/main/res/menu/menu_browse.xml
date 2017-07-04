@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wit.bobajob.baj_maxshannon.Browse">
+
+    <item
+        android:id="@+id/action_register"
+        android:orderInCategory="100"
+        android:title="@string/action_register"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/browseAds"
+        android:orderInCategory="102"
+        android:title="Browse Adverts" />
+    <item
+        android:id="@+id/browseTradesmen"
+        android:orderInCategory="103"
+        android:title="Browse Tradesmen" />
+    <item
+        android:id="@+id/createAd"
+        android:orderInCategory="104"
+        android:title="Create Ad" />
+    <item
+        android:id="@+id/login"
+        android:orderInCategory="105"
+        android:title="Login" />
+
+
+</menu>
